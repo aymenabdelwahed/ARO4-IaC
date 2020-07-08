@@ -1,0 +1,40 @@
+subscription 			= ""
+
+aro_name 			= ""
+aro_vnet_resource_group_name	= ""
+aro_location 			= ""
+
+aro_client_name			= ""
+aro_client_id			= ""
+aro_client_object_id		= ""
+aro_client_secret		= ""
+
+aro_api_server_visibility	= "Public"
+aro_ingress_visibility		= "Public"
+
+tags 				= {
+    Environment = "Production"
+    Platform = "ARO"
+}
+
+aro_worker_node_size 		= "Standard_E4s_v3"
+aro_worker_node_count 		= 4
+
+aro_vnet_name			= ""
+aro_vnet_cidr			= ""
+aro_master_subnet_name		= ""
+aro_master_subnet_cidr		= ""
+aro_worker_subnet_name		= ""
+aro_worker_subnet_cidr		= ""
+
+roles = [
+  {
+    role = "Contributor"
+  },
+  {
+    role = "User Access Administrator"
+  }
+]
+
+akv_name			= ""
+akv_resource_group_name		= ""
